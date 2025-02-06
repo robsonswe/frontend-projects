@@ -38,11 +38,11 @@ const projects = [
     preview: "https://robsonswe.github.io/frontend-projects/linkshort-int",
   },
   {
-    name: "Weather App",
+    name: "WeatherWise",
     techs: ["HTML", "CSS", "Javascript"],
     ssname: "weather",
-    github: "https://github.com/robsonswe/weatherapp",
-    preview: "https://robsonswe.github.io/weatherapp/",
+    github: "https://github.com/robsonswe/WeatherWise",
+    preview: "https://robsonswe.github.io/WeatherWise/",
   },
   {
     name: "Job listings with filter",
