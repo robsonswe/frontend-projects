@@ -41,8 +41,8 @@ const projects = [
     name: "WeatherWise",
     techs: ["HTML", "CSS", "Javascript"],
     ssname: "weather",
-    github: "https://github.com/robsonswe/WeatherWise",
-    preview: "https://robsonswe.github.io/WeatherWise/",
+    github: "https://github.com/robsonswe/weatherwise",
+    preview: "https://robsonswe.github.io/weatherwise/",
   },
   {
     name: "Job listings with filter",
