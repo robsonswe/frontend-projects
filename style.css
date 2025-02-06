@@ -1,103 +1,136 @@
-@import url("https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700,800");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+
 :root {
-  --color1: #161d23;
-  --color2: #0f444c;
-  --color3: #114538;
-  --color4: #5e8d83;
-  --color5: #d2e1cc;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: var(--color3);
-  margin: 5px;
-  border-radius: 3px;
-}
-header h1 {
-  padding: 10px;
-  color: var(--color5);
+  --cyber-blue: #00f3ff;
+  --dark-bg: #0a0a12;
+  --interface-gray: #1a1a24;
+  --neon-border: #2d2d40;
+  --terminal-text: #e0e0ec;
+  --grid-gap: 1rem;
 }
 
 body {
-  background-color: var(--color1);
-  font-family: "Exo", sans-serif;
+  background: var(--dark-bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--terminal-text);
+  line-height: 1.4;
+  padding: 1rem;
 }
 
-main {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex-wrap: wrap;
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--neon-border);
+}
+
+header h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.8rem;
+  color: var(--cyber-blue);
+  letter-spacing: 0.1em;
+}
+
+main#projectsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--grid-gap);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project {
-  height: fit-content;
-  background-color: var(--color3);
+  background: var(--interface-gray);
+  border: 1px solid var(--neon-border);
   border-radius: 4px;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: 150px 1fr;
-  border: 1px solid black;
-  font-size: 1.1rem;
+  grid-template-rows: auto 1fr auto;
+  min-height: 200px;
+  transition: all 0.2s ease;
 }
-.project .screenshot {
-  width: 150px;
-  height: 150px;
-  border-radius: 4px 0 0 4px;
-  border-right: 1px solid black;
+
+.project:hover {
+  border-color: var(--cyber-blue);
+  box-shadow: 0 0 8px rgba(0, 243, 255, 0.1);
 }
-.project .infos {
-  display: grid;
-  grid-template-rows: 0.5fr 1fr 0.5fr;
-  grid-template-columns: 1fr;
-  color: var(--color5);
-}
-.project .infos h2 {
-  font-size: 1rem;
-  text-align: start;
-  padding: 5px;
+
+.screenshot {
   width: 100%;
-  align-self: center;
-}
-.project .infos .techs {
-  display: grid;
-  gap: 10px;
-  border-top: 1px solid black;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--neon-border);
 }
 
-.project .infos .techs ul {
-  list-style-position: inside;
-  list-style-type: none;
+.infos h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.1rem;
+  color: var(--cyber-blue);
+  margin-bottom: 0.5rem;
+}
+
+.techs ul {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  padding-top: 10px;
-  padding-left: 5px;
-  gap: 20px;
-  font-size: 0.95rem;
-}
-.project .infos .links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 0.8rem;
-}
-.project .infos a {
-  margin: 0;
-  color: var(--color5);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  border-top: 1px solid black;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.75rem;
 }
 
-.project .infos a:hover {
-  text-decoration: underline;
-  cursor: pointer;
+.techs li {
+  background: rgba(0, 243, 255, 0.1);
+  color: var(--cyber-blue);
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  border: 1px solid var(--cyber-blue);
+  font-size: 0.75rem;
+}
+
+.links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.infos a {
+  color: var(--terminal-text);
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.infos a:hover {
+  color: var(--cyber-blue);
+}
+
+.infos a::before {
+  content: '↗';
+  font-size: 0.9em;
+  color: var(--cyber-blue);
+}
+
+@media (max-width: 768px) {
+  main#projectsList {
+    grid-template-columns: 1fr;
+  }
+  
+  .project {
+    min-height: auto;
+  }
+  
+  .screenshot {
+    height: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main#projectsList {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
