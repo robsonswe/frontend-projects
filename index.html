@@ -8,10 +8,36 @@
     <title>Frontend Projects</title>
   </head>
   <body>
-    <header>
-      <h1>Frontend Projects</h1>
-    </header>
-    <main id="projectsList"></main>
-    <script src="projectslist.js"></script>
+    <div class="page-container">
+      <header>
+        <div class="header-content">
+          <h1>Frontend Projects</h1>
+          <p class="subtitle">Here are some of the projects I've worked on.</p>
+          <div class="filter-container">
+            <div class="filter-label">
+              <span>Filter by Tech</span>
+              <button id="clear-filters" class="clear-btn">Clear All</button>
+            </div>
+            <div id="tech-filters" class="tech-filters">
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <main id="projectsList">
+      </main>
+      
+      <footer>
+        <div class="footer-content">
+          <p>Robson's Portfolio • <span class="year">2025</span></p>
+          <div class="footer-links">
+            <a href="https://github.com/robsonswe" target="_blank">GitHub</a>
+            <a href="mailto:robsonssdev@gmail.com" class="contact-link">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="projectslist.js" type="module"></script>
   </body>
 </html>

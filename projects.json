@@ -1,0 +1,101 @@
+[
+    {
+      "name": "Finance Manager",
+      "techs": ["HTML", "TailwindCSS", "Typescript", "React", "NextJS", "PostgreSQL", "Express.JS", "Docker"],
+      "screenshot": "./screenshots/financemanager.jpg",
+      "github": "https://github.com/robsonswe/financemanager",
+      "preview": "https://github.com/robsonswe/financemanager/tree/main/website/screenshots"
+    },
+    {
+      "name": "eSports Page",
+      "techs": ["HTML", "TailwindCSS", "Typescript", "React", "NextJS"],
+      "screenshot": "./screenshots/esports.jpg",
+      "github": "https://github.com/robsonswe/cs50xfinal",
+      "preview": "https://cs50xfinal.vercel.app/"
+    },
+    {
+      "name": "IP Address Tracker",
+      "techs": ["HTML", "CSS", "Javascript"],
+      "screenshot": "./screenshots/iptrack-int.jpg",
+      "github": "https://github.com/robsonswe/frontend-projects/tree/iptrack-int",
+      "preview": "https://robsonswe.github.io/frontend-projects/iptrack-int"
+    },
+    {
+      "name": "URL Shortening Page",
+      "techs": ["HTML", "CSS", "Javascript", "React", "Sass"],
+      "screenshot": "./screenshots/linkshort-int.jpg",
+      "github": "https://github.com/robsonswe/frontend-projects/tree/linkshort-int",
+      "preview": "https://robsonswe.github.io/frontend-projects/linkshort-int"
+    },
+    {
+      "name": "WeatherWise",
+      "techs": ["HTML", "CSS", "Javascript"],
+      "screenshot": "./screenshots/weather.jpg",
+      "github": "https://github.com/robsonswe/weatherwise",
+      "preview": "https://robsonswe.github.io/weatherwise/"
+    },
+    {
+      "name": "Job listings with filter",
+      "techs": ["HTML", "TailwindCSS", "Javascript", "React"],
+      "screenshot": "./screenshots/joblist-int.jpg",
+      "github": "https://github.com/robsonswe/frontend-projects/tree/joblist-int",
+      "preview": "https://robsonswe.github.io/frontend-projects/joblist-int"
+    },
+    {
+      "name": "eCommerce",
+      "techs": ["HTML", "TailwindCSS", "Javascript", "React"],
+      "screenshot": "./screenshots/ecommerce.jpg",
+      "github": "https://github.com/robsonswe/ecommerce",
+      "preview": "https://robsonswe.github.io/ecommerce/"
+    },
+    {
+      "name": "Curriculum Generator",
+      "techs": ["HTML", "CSS", "Javascript", "React"],
+      "screenshot": "./screenshots/curriculum.jpg",
+      "github": "https://github.com/robsonswe/cvgenerator",
+      "preview": "https://robsonswe.github.io/cvgenerator/"
+    },
+    {
+      "name": "Web Calculator",
+      "techs": ["HTML", "CSS", "Javascript"],
+      "screenshot": "./screenshots/calculator.jpg",
+      "github": "https://github.com/robsonswe/web-calculator",
+      "preview": "https://robsonswe.github.io/web-calculator/"
+    },
+    {
+      "name": "Landing Page Template",
+      "techs": ["HTML", "CSS"],
+      "screenshot": "./screenshots/landingpage.jpg",
+      "github": "https://github.com/robsonswe/lpage-template1",
+      "preview": "https://robsonswe.github.io/lpage-template1/"
+    },
+    {
+      "name": "Dashboard Template",
+      "techs": ["HTML", "CSS"],
+      "screenshot": "./screenshots/dashboard.jpg",
+      "github": "https://github.com/robsonswe/dashboard-t1",
+      "preview": "https://robsonswe.github.io/dashboard-t1/"
+    },
+    {
+      "name": "Social Media Dashboard with Themes",
+      "techs": ["HTML", "CSS", "Javascript"],
+      "screenshot": "./screenshots/smdt-junior.jpg",
+      "github": "https://github.com/robsonswe/frontend-projects/tree/smdt-junior",
+      "preview": "https://robsonswe.github.io/frontend-projects/smdt-junior"
+    },
+    {
+      "name": "Interactive card details",
+      "techs": ["HTML", "CSS", "Javascript"],
+      "screenshot": "./screenshots/icdf-junior.jpg",
+      "github": "https://github.com/robsonswe/frontend-projects/tree/icdf-junior",
+      "preview": "https://robsonswe.github.io/frontend-projects/icdf-junior"
+    },
+    {
+      "name": "Product Preview Card",
+      "techs": ["HTML", "CSS"],
+      "screenshot": "./screenshots/ppcc-nb.jpg",
+      "github": "https://github.com/robsonswe/frontend-projects/tree/ppcc-nb",
+      "preview": "https://robsonswe.github.io/frontend-projects/ppcc-nb"
+    }
+  ]
+  
